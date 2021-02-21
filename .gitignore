@@ -1,6 +1,6 @@
 .env
 *.csv
-Python-3*
-client_secrets.json
-__pycache*
+*.json
 *.xlsx
+Python-3*
+__pycache*
