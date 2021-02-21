@@ -328,5 +328,8 @@ for court in courts:
                 break
 
 df = pd.DataFrame(output, columns=header).drop_duplicates()
+df[pd.isnull(df)] = None
 
-df.to_excel('output.xlsx', index=False)
+#df.to_excel('output.xlsx', index=False)
+
+df.to_csv('probatesScraped.csv', index=False)
